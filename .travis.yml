@@ -8,8 +8,7 @@ before_script:
 script: ./vendor/bin/phpunit ./tests
 deploy:
   provider: heroku
-  app: sesion6travisheroku2
+  app: sesion6travisheroku
   on: master
   skip_cleanup: true
-  api_key:
-    secure: Ik0XIrDr8iNiHJhuhGbWIOla7H1o8TKK4m4/suKSLi+g2rPFo5O+YGVqdlBrhDq917GDpisGLAiOgjNOj7TiJ4nb/vDmyAg14hS+8Fv0bL9R5+RlFCHu03QWe11tRS52PZcXpY2WDBJxFFETsWM0MjIXGIyA16X7Deo2s2QEXN2TRueZRSys2mMmQlXqSBMsYS95151qO65egXb4cUPNLHwZbwS8NNTxRvlc0jHL2SwowryYEo4KYVlxUm/QP2FtaN7+ZkNxq2JotNMoZTfwrb5+FpsXY1pJHOjIzIgjvKXyNyxIL8qsvono2Oy/JH1YveiICXnaytqsTV/Y5EkN5kGSqDGTr7tawjjifex7zBfHUectgUmo0M976bLiAN4x0kId1SD+w+NcVGtsY5lqDDQUHo0408w1NlQkA1sNgejmq4PC5Y/Xk8bALj62ZjMNcdblGqK8abzzv4nr0pYR2JRHlM3x+Wrmldrt1sPVnRb/3mhjd17nfng7pOIMJmZy2BNCJlx8u6mRF1Ql4vu9+fsYqEt/sEK60I8+IAEy5tzobH18mDSHf59gWfkHHfkfovZnvuh/btX60l2DT+7d6zQhoF9nsgXGV/3bhA7NtQCEvnWN19LnnxsewlUYgslaBvKI1nvm9XhNVZ8SVmu2enZ4P50Sr7YK5GVlSS8PcJA=
+  api_key: $HEROKU_API_KEY
