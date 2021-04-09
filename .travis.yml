@@ -6,10 +6,3 @@ services:
 before_script:
   - composer install
 script: ./vendor/bin/phpunit ./tests
-deploy:
-  provider: heroku
-  app: sesion6travisheroku
-  on: master
-  skip_cleanup: true
-  api_key:
-    secure: k0uFo2Jmf69v4cPjHYw87iboVil/ylHNlykBB6+Ym8FAF/WjwXkhBwqxm12LGCX/Kt38prP777rPm4ckA0ifRYclnaA8RkgDnWdndu+YLiEbyOQPeG/+Eti9zAao/h5mkMGVjbrret7kWSXhI4DYKkrVSDm5m2zzJ7W4S8QZm36g/CKL1L232MuZZkMUAqoOObv0UWlT3sUfowGjcauogF1Rbmj+u89Hw3lrnDaIK5yMAOGlPE02LBw+q34L7CKD9PNAqJYcsZazm2AlRKD0nYbPJXc1hVYIs6tGsj9GSDGfmfwrYHOIvdNE11+4xeSjT1rznOyy+3hObbdYCFDxK7Ny6rLM5BsHqGhNK5Lo1kZUiQznpPu6HWEtKUI4mMjQSKqB2o6cI6kLeEcmWIK6ZA3K420dQ2S1piW/+LBS6CrH3SaPj2Lxl3lxDsoSHDfdcGdJbNrkgSsqZecTqsUnN+QhYnlZr1i9vz0trjI7W2jLYwelG+Z61j30a2YDCOOUILzr9ueHBswAeRkWLEYOCOL7H6DuF3/TAmW6jlqrR8grfWWCJtTvljwOUlL3FIwXdo0takxIsmlTJi//aDg3FnCZLG8fvIiguN90zecoBIMe0GWEcRWP8TzKP8x0GrnXpnCRQJ1s7FNJZxF347Ql6b0gyoBquD6OIlsSmi73Eqo=
