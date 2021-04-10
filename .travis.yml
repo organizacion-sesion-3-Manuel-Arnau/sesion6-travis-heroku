@@ -9,7 +9,7 @@ script: "./vendor/bin/phpunit ./tests"
 deploy:
   provider: heroku
   api_key: c468d414-9808-4253-a14b-29b26b85ede8
-  app: sesion6-travis-heroku
+  app: sesion6travisheroku
   on:
     repo: organizacion-sesion-3-Manuel-Arnau/sesion6-travis-heroku
   skip_cleanup: 'true'
