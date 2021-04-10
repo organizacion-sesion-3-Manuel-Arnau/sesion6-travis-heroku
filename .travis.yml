@@ -8,7 +8,8 @@ before_script:
 script: "./vendor/bin/phpunit ./tests"
 deploy:
   provider: heroku
-  app: sesion6travisheroku
-  on: master
-  api_key:
-    secure: 76afb091-b27f-42b8-bca0-4742a091a4ca
+  api_key: c468d414-9808-4253-a14b-29b26b85ede8
+  app: sesion6-travis-heroku
+  on:
+    repo: organizacion-sesion-3-Manuel-Arnau/sesion6-travis-heroku
+  skip_cleanup: 'true'
